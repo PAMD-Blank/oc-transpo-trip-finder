@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f5f7;
+    color: #111;
+    min-width: 280px;
+}
+
+.container {
+    max-width: 400px;
+    min-height: 640px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.brand-header {
+    color: #c8102e;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.back-link {
+    display: inline-block;
+    color: #c8102e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 4px 0 16px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.subtext {
+    color: #555;
+    font-size: 15px;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #c8102e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 18px;
+    box-sizing: border-box;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #a90d27;
+}
+
+.button:disabled {
+    background-color: #d9d9d9;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    color: #c8102e;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px;
+    box-sizing: border-box;
+}
+
+.secondary-button:hover {
+    border-color: #c8102e;
+    background-color: #fff6f7;
+}
+
+.error-banner {
+    margin-top: 16px;
+    padding: 10px 12px;
+    background-color: #fdecee;
+    border: 1px solid #e8a0a8;
+    border-left: 4px solid #c8102e;
+    border-radius: 6px;
+    color: #8a1024;
+    font-size: 14px;
+}
+
+.button:focus-visible,
+.secondary-button:focus-visible,
+.back-link:focus-visible,
+input:focus-visible,
+button:focus-visible,
+tr:focus-visible {
+    outline: 3px solid #0b57d0;
+    outline-offset: 2px;
+}

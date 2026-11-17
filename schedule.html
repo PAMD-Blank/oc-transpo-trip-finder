@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line 2 Schedule - OC Transpo</title>
+    <link rel="stylesheet" href="./styles/general-body.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="brand-header">OC TRANSPO</p>
+            <a id="back-to-results-link" href="./departures.html" class="back-link">&lt; Back to results</a>
+        </header>
+
+        <main>
+            <h1>Line 2 schedule</h1>
+
+            <div id="schedule-summary" class="summary-box"></div>
+
+            <table class="timetable" aria-label="Expanded Line 2 schedule">
+                <thead>
+                    <tr>
+                        <th scope="col">Depart</th>
+                        <th scope="col">Arrive</th>
+                        <th scope="col" class="status-col"><span class="sr-only">Status</span></th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body"></tbody>
+            </table>
+
+            <button id="confirm-journey-button" class="button" type="button" disabled>Confirm journey</button>
+            <div id="live-announcer" class="sr-only" aria-live="polite"></div>
+        </main>
+    </div>
+
+    <script src="./scripts/structure.js"></script>
+    <script src="./scripts/schedule.js"></script>
+</body>
+</html>

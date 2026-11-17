@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departures - OC Transpo</title>
+    <link rel="stylesheet" href="./styles/general-body.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="brand-header">OC TRANSPO</p>
+            <a id="edit-search-link" href="./tripFinder.html" class="back-link">&lt; Edit search</a>
+        </header>
+
+        <main>
+            <h1>Trip Finder</h1>
+            <h2>Departures</h2>
+
+            <div id="results-summary" class="summary-box"></div>
+
+            <table class="timetable" aria-label="Departures around requested time">
+                <thead>
+                    <tr>
+                        <th scope="col">Depart</th>
+                        <th scope="col">Arrive</th>
+                        <th scope="col" class="status-col"><span class="sr-only">Status</span></th>
+                    </tr>
+                </thead>
+                <tbody id="results-body"></tbody>
+            </table>
+
+            <a id="open-schedule-link" href="./schedule.html" class="secondary-button">Open Line 2 schedule</a>
+        </main>
+    </div>
+
+    <script src="./scripts/structure.js"></script>
+    <script src="./scripts/departures.js"></script>
+</body>
+</html>

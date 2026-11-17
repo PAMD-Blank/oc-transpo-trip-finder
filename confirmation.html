@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Selected - OC Transpo</title>
+    <link rel="stylesheet" href="./styles/general-body.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="brand-header">OC TRANSPO</p>
+            <a id="back-to-results-link" href="./departures.html" class="back-link">&lt; Back to results</a>
+        </header>
+
+        <main>
+            <h1>Journey selected</h1>
+
+            <div id="confirmation-summary" class="summary-box"></div>
+            <div id="confirmation-card" class="stat-card"></div>
+            <div id="confirmation-alert" class="error-banner hidden" role="alert"></div>
+
+            <a id="choose-another-link" href="./schedule.html" class="secondary-button">Choose another departure</a>
+            <a id="start-new-search-link" href="./tripFinder.html" class="secondary-button">Start a new search</a>
+        </main>
+    </div>
+
+    <script src="./scripts/structure.js"></script>
+    <script src="./scripts/confirmation.js"></script>
+</body>
+</html>

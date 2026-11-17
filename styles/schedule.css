@@ -1,0 +1,242 @@
+.selection-area {
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.text-input {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.text-input[aria-invalid="true"] {
+    border-color: #c8102e;
+    background-color: #fff8f7;
+}
+
+.autocomplete-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 4px 0 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.autocomplete-list li {
+    padding: 10px 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.autocomplete-list li:hover,
+.autocomplete-list li.active-option {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Calendar */
+.calendar-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.calendar-box.invalid-box {
+    border-color: #c8102e;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.calendar-title {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    color: #c8102e;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.calendar-nav:hover {
+    background-color: #fce8e8;
+}
+
+.calendar-weekdays,
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 2px;
+    text-align: center;
+}
+
+.calendar-weekdays {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.calendar-day,
+.calendar-blank {
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.calendar-day {
+    border: none;
+    border-radius: 50%;
+    background: none;
+    font-family: monospace;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.calendar-day:hover {
+    background-color: #eee;
+}
+
+.calendar-day.active-date {
+    background-color: #fadbd8;
+    font-weight: bold;
+}
+
+/* Outdated box */
+.outdated-box {
+    margin-top: 18px;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px dashed #bbb;
+    border-radius: 8px;
+    color: #666;
+    font-size: 13px;
+}
+
+.outdated-box h3 {
+    margin: 0 0 6px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.outdated-box p {
+    margin: 3px 0;
+}
+
+/* Trip Summary & Timetable */
+.summary-box {
+    margin-bottom: 14px;
+}
+
+.summary-box p {
+    margin: 2px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.summary-box p.route-title {
+    color: #111;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.timetable th {
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.timetable td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.timetable .status-col {
+    text-align: right;
+    color: #555;
+}
+
+.timetable tbody tr {
+    cursor: pointer;
+}
+
+.timetable tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.timetable tbody tr.nearest-row {
+    background-color: #fce8e8;
+}
+
+.timetable tbody tr.selected-row {
+    background-color: #f8c8c8;
+    font-weight: bold;
+}
+
+/* Confirmation Card */
+.stat-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.time-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.station-name {
+    font-size: 15px;
+    margin: 4px 0 2px 0;
+}
+
+.station-address {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 16px 0;
+}
+
+.station-address.last-address {
+    margin-bottom: 0;
+}

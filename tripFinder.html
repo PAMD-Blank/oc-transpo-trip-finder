@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Finder - OC Transpo</title>
+    <link rel="stylesheet" href="./styles/general-body.css">
+    <link rel="stylesheet" href="./styles/schedule.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p class="brand-header">OC TRANSPO</p>
+        </header>
+
+        <main>
+            <h1>Trip Finder</h1>
+
+            <form id="trip-form" novalidate autocomplete="off">
+                <div class="selection-area">
+                    <label class="form-label" for="from-input">From</label>
+                    <input
+                        id="from-input"
+                        class="text-input"
+                        type="text"
+                        placeholder="Enter starting station"
+                        aria-label="From station"
+                        required>
+                    <ul id="from-listbox" class="autocomplete-list hidden" role="listbox"></ul>
+                </div>
+
+                <div class="selection-area">
+                    <label class="form-label" for="to-input">To</label>
+                    <input
+                        id="to-input"
+                        class="text-input"
+                        type="text"
+                        placeholder="Enter destination station"
+                        aria-label="To station"
+                        required>
+                    <ul id="to-listbox" class="autocomplete-list hidden" role="listbox"></ul>
+                </div>
+
+                <div class="selection-area">
+                    <label class="form-label">Travel date</label>
+                    <div id="calendar-box" class="calendar-box" role="group" aria-label="Travel date calendar">
+                        <div class="calendar-header">
+                            <button id="calendar-prev" class="calendar-nav" type="button" aria-label="Previous month">&lt;</button>
+                            <p id="calendar-title" class="calendar-title">December 2026</p>
+                            <button id="calendar-next" class="calendar-nav" type="button" aria-label="Next month">&gt;</button>
+                        </div>
+                        <div class="calendar-weekdays">
+                            <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+                        </div>
+                        <div id="calendar-grid" class="calendar-grid"></div>
+                    </div>
+                </div>
+
+                <div class="selection-area">
+                    <label class="form-label" for="time-input">Departure time</label>
+                    <input
+                        id="time-input"
+                        class="text-input"
+                        type="text"
+                        placeholder="HH:MM"
+                        maxlength="5"
+                        required>
+                </div>
+
+                <div id="form-error" class="error-banner hidden" role="alert" tabindex="-1"></div>
+
+                <button id="search-button" class="button" type="submit" disabled>Search for trip</button>
+
+                <div id="outdated-preview" class="outdated-box hidden">
+                    <h3>Previous results (Outdated &mdash; click Search for trip to refresh)</h3>
+                    <div id="outdated-content"></div>
+                </div>
+            </form>
+
+            <div id="live-announcer" class="sr-only" aria-live="polite"></div>
+        </main>
+    </div>
+
+    <script src="./scripts/structure.js"></script>
+    <script src="./scripts/tripFinder.js"></script>
+</body>
+</html>
