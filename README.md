@@ -1,8 +1,7 @@
 # OC Transpo Line 2 Trip Finder
 
 ## Instruction
-1. Unzip Team13_A4_Source.zip
-2. Double-click index.html to open the application directly in the browser
+1. Double-click index.html to open the application directly in the browser
 
 ## Software & Dependencies
 - A web browser.
